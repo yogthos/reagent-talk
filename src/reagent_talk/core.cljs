@@ -17,7 +17,7 @@
        :component-did-update (render-text converter)
        :render               (fn [_] [:div])})))
 
-(defn editor []
+(defn md-editor []
   [:> ui/Grid
    [:> ui/Grid.Row
     {:columns 2}
@@ -39,7 +39,7 @@
 
 (defn home-page []
   [:div
-   [editor]
+   [md-editor]
    [increment-button]
    [display-count]])
 
